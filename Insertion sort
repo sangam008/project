@@ -1,0 +1,10 @@
+Dim J, Value As Integer
+For Index As Integer = 1 To 10
+    Value=Item(Index)
+    J=Index-1
+    While J>=0 And Item(Index)>Value
+         Item(J+1)=Item(J)
+         J=J-1
+    End While
+    Item(J+1)=Value
+Next
